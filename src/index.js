@@ -21,8 +21,6 @@ const getScore = (data) => {
   }
 };
 
-console.log(getScore('5:-1'));
-
 const score = (guessedScore, realScore) => {
   try {
     const [guessedScoreFirst, guessedScoreSecond] = getScore(guessedScore);
