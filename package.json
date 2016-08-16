@@ -1,5 +1,5 @@
 {
-  "name": "javascript-package",
+  "name": "check-guessed-score",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
