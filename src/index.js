@@ -15,11 +15,13 @@ const getScore = (data) => {
       throw new SyntaxError('The score can\'t be less than 0. Correct format must be "5:5"');
     }
     return [first, second];
-  }
-  catch (e) {
+  } catch (e) {
     console.log(e);
+    return this;
   }
 };
+
+console.log(getScore('5:-1'));
 
 const score = (guessedScore, realScore) => {
   try {
@@ -39,6 +41,7 @@ const score = (guessedScore, realScore) => {
     if (e.name === SyntaxError) {
       console.log(e);
     }
+    return this;
   }
 };
 
