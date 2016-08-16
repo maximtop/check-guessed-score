@@ -23,15 +23,18 @@
   "devDependencies": {
     "babel-cli": "*",
     "babel-core": "*",
-    "babel-preset-es2015": "*",
-    "babel-preset-es2016": "*",
-    "babel-preset-stage-0": "*",
-    "eslint": "*",
     "babel-eslint": "*",
     "babel-plugin-syntax-flow": "*",
     "babel-plugin-transform-flow-strip-types": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-es2016": "*",
+    "babel-preset-stage-0": "*",
+    "codeclimate-test-reporter": "*",
+    "eslint": "*",
     "eslint-config-airbnb": "*",
+    "eslint-plugin-flowtype": "*",
     "eslint-plugin-import": "^1.8.0",
-    "eslint-plugin-flowtype": "*"
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*"
   }
 }
