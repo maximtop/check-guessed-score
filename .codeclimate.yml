@@ -1,7 +1,8 @@
----
 engines:
   fixme:
     enabled: true
+  eslint:
+    enabled: true
 ratings:
-  paths: []
+  paths: ["**.js"]
 exclude_paths: []

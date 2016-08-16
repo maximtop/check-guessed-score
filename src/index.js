@@ -1,5 +1,3 @@
-// @flow
-
 const getScore = (data) => {
   try {
     let [first, second] = data.split(':');

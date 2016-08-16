@@ -2,8 +2,6 @@ extends: 'airbnb/base'
 
 parser: babel-eslint
 
-plugins: [flowtype]
-
 env:
   node: true
   mocha: true
