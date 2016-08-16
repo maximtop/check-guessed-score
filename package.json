@@ -1,0 +1,37 @@
+{
+  "name": "javascript-package",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --colors",
+    "gulp": "gulp",
+    "eslint": "eslint",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximtop/check-guessed-score.git"
+  },
+  "author": "Maxim Topciu",
+  "license": "MIT",
+  "homepage": "https://github.com/maximtop/check-guessed-score.git#readme",
+  "dependencies": {
+    "mocha": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-es2016": "*",
+    "babel-preset-stage-0": "*",
+    "eslint": "*",
+    "babel-eslint": "*",
+    "babel-plugin-syntax-flow": "*",
+    "babel-plugin-transform-flow-strip-types": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-flowtype": "*"
+  }
+}
