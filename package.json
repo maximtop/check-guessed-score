@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --colors",
-    "gulp": "gulp",
     "eslint": "eslint",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublish": "npm run build"
@@ -31,7 +30,6 @@
     "eslint-config-airbnb": "*",
     "eslint-plugin-import": "^1.8.0",
     "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-react": "*",
-    "istanbul": "*"
+    "eslint-plugin-react": "*"
   }
 }
