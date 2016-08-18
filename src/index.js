@@ -19,7 +19,8 @@ const getScore = (data) => {
   }
 };
 
-const checkWinner = (firstTeamScore, secondTeamScore) => {
+const checkWinner = (score) => {
+  const [firstTeamScore, secondTeamScore] = getScore(score);
   if (firstTeamScore === secondTeamScore) {
     return 'draw';
   }
@@ -28,11 +29,9 @@ const checkWinner = (firstTeamScore, secondTeamScore) => {
 
 const score = (guessedScore, realScore) => {
   try {
-    const [guessedScoreFirst, guessedScoreSecond] = getScore(guessedScore);
-    const [realScoreFirst, realScoreSecond] = getScore(realScore);
-    const guessedWinner = checkWinner(guessedScoreFirst, guessedScoreSecond);
-    const realWinner = checkWinner(realScoreFirst, realScoreSecond);
-    if (guessedScoreFirst === realScoreFirst && guessedScoreSecond === realScoreSecond) {
+    const guessedWinner = checkWinner(guessedScore);
+    const realWinner = checkWinner(realScore);
+    if (guessedScore === realScore) {
       return 2;
     } else if (guessedWinner === realWinner) {
       return 1;
